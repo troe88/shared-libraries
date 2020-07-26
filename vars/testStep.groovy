@@ -1,4 +1,4 @@
-String postfix = "postfix"
+@Field String postfix = "postfix"
 
 def success(String message) {
   echo "SUCCESS: ${message} with ${postfix}"
