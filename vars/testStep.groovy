@@ -1,3 +1,5 @@
+import groovy.transform.Field
+
 @Field String postfix = "postfix"
 
 def success(String message) {
