@@ -1,9 +1,11 @@
+String postfix = "postfix"
+
 def success(String message) {
-  echo "INFO: ${message}"
+  echo "SUCCESS: ${message} with ${postfix}"
 }
 
 def failure(String message) {
-  echo "WARNING: ${message}"
+  echo "FAILURE: ${message} with ${postfix}"
 }
 
 def call(Map config) {     
