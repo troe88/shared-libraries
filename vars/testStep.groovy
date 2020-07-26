@@ -1,4 +1,3 @@
 def call(Map config) {
-     echo "${config.type}"
-     echo "${config.message}"
+     echo "${config.type}: ${config.message}"
 }
