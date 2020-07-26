@@ -11,12 +11,12 @@ def log_error(String message) {
 }
 
 def call(Closure body) {
-    def config = [:]
-    body.resolveStrategy = Closure.DELEGATE_FIRST
-    body.delegate = config
-    body()
-    echo "$config"
-    echo "Hello from myLog"
+  def config = [:]
+  body.resolveStrategy = Closure.DELEGATE_FIRST
+  body.delegate = config
+  body()
+  echo "${config.type}"
+  echo "Hello from myLog"
 //
 //  switch (config.type) {
 //      case 'info':
