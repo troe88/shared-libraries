@@ -1,16 +1,16 @@
-def log_info(message) {
+def log_info(String message) {
   echo "INFO: ${message}"
 }
 
-def log_warning(message) {
+def log_warning(String message) {
   echo "WARNING: ${message}"
 }
 
-def log_error(message) {
+def log_error(String message) {
   echo "ERROR: ${message}"
 }
 
-def call(body) {
+def call(Closure body) {
   def config = [:]
   body.resolveStrategy = Closure.DELEGATE_FIRST
   body.delegate = config
