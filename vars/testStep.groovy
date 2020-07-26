@@ -1,3 +1,3 @@
-def call(Closure body) {
-     body()
+def call(Map config) {
+     echo "${config.message}"
 }
