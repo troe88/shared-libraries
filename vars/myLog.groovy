@@ -11,10 +11,11 @@ def log_error(String message) {
 }
 
 def call(Closure body) {
-//  def config = [:]
-//  body.resolveStrategy = Closure.DELEGATE_FIRST
-//  body.delegate = config
+    def config = [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = config
     body()
+    echo "$config"
     echo "Hello from myLog"
 //
 //  switch (config.type) {
